@@ -1,0 +1,139 @@
+.item1 { grid-area: header; color: hsl(31, 64%, 76%) }
+.item2 { grid-area: menu; color: hsl(0, 0%, 100%)}
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header header'
+    'menu menu menu menu menu menu menu menu'
+    'main main main main main main main main'
+    'footer footer footer footer footer footer footer footer';
+    grid-gap: 5px;
+    background-color: #f0ebd1;
+    padding: 5px;
+    font-family: 'Lucida Sans', ;
+    text-align: center;      
+  }
+   .grid-container > div {
+    background-color: white;
+    text-align: center;
+    padding: 20px 20;
+    font-size: 30px;
+  }
+  *{
+    margin: 0;
+    padding: 20;
+    box-sizing: border-box;
+  }
+
+  .tabcontent {
+    animation: fadeEffect 3s; /* Fading effect takes 1 second */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #f0ebd1;
+  background-color: #ffffff;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 50px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #f0ebd1;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: hsl(31, 64%, 76%);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#CONOCIMIENTOS h3 {
+  font-family: Verdana;
+  font-size: 15px;
+  color: black;
+  padding: 5px 5px;
+  background-color: hsl(31, 64%, 76%);
+}
+#CONOCIMIENTOS p {
+  font-family: Verdana;
+  font-size: 12px;
+  color: black;
+  padding: 5px
+}
+#CONOCIMIENTOS a {
+  font-family: Verdana;
+  font-size: 10px;
+  color:hsl(31, 64%, 76%);
+  padding: 5px
+}
+
+
+#FORMACIÓN h3 {
+  font-family: Verdana;
+  font-size: 15px;
+  color: black;
+  padding: 5px 5px;
+  background-color: hsl(31, 64%, 76%);
+}
+#FORMACIÓN p {
+  font-family: Verdana;
+  font-size: 12px;
+  color: black;
+  padding: 5px
+}
+#FORMACIÓN a {
+  font-family: Verdana;
+  font-size: 10px;
+  color:hsl(31, 64%, 76%);
+  padding: 5px
+}
+
+#CONTACTO h3 {
+  font-family: Verdana;
+  font-size: 15px;
+  color: black;
+  padding: 5px 5px;
+  background-color: hsl(31, 64%, 76%);
+}
+#CONTACTO a {
+  font-family: Verdana;
+  font-size: 10px;
+  color:hsl(31, 64%, 76%);
+  padding: 0px
+}
+#CONTACTO img {
+  padding: 5px;
+}  
+
+
+/* El By Ile*/
+ h6 {
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
